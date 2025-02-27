@@ -27,11 +27,11 @@ export class S3Service {
       const response = await axios.get(imageUrl, { responseType: 'arraybuffer' });
       const buffer = Buffer.from(response.data, 'binary');
       const fileName = path.basename(imageUrl).split('?')[0];
-      const s3PathUrl = `s3 저장소 url`;
+      const s3PathUrl = `s3 저장소 url1`;
       const s3FilePath = path.join(s3PathUrl, fileName);
       
       // 이미지 저장
-      const localPathUrl = `로컬 저장소 url`;
+      const localPathUrl = `로컬 저장소 url1`;
       const localFilePath = path.join(localPathUrl, fileName);
       fs.writeFileSync(localFilePath, buffer);
 

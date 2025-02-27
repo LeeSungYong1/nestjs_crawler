@@ -5,6 +5,7 @@ import { CrawlerService } from './crawler.service';
 export class CrawlerController {
   constructor(private readonly crawlerService: CrawlerService) {}
 
+  
   @Get()
   async startCrawling() {
     return this.crawlerService.scrapeWebsite();
