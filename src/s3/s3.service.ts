@@ -28,7 +28,7 @@ export class S3Service {
       const buffer = Buffer.from(response.data, 'binary');
       const fileName = path.basename(imageUrl).split('?')[0];
 
-      const s3PathUrl = `s3 저장소 url 젝키`;
+      const s3PathUrl = `s3 저장소 url`;
 
       const s3FilePath = path.join(s3PathUrl, fileName);
       
