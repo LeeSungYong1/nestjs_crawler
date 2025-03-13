@@ -27,7 +27,8 @@ export class CrawlerService {
 
   async scrapeWebsite() { 
     await this.initializeDriver();
-    const targetUrl = "크롤링 해야되는 url12-jackie3-312312";
+
+    const targetUrl = "크롤링 해야되는 url jackie변경";
 
     try {
         await this.driver.get(targetUrl);
