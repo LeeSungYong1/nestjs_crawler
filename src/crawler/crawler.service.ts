@@ -25,8 +25,9 @@ export class CrawlerService {
         .build();
   }
 
-  async scrapeWebsite() {
+  async scrapeWebsite() { 
     await this.initializeDriver();
+
     const targetUrl = "크롤링 해야되는 url jackie변경";
 
     try {
